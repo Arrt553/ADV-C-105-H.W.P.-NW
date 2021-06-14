@@ -1,0 +1,54 @@
+ 
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1 class="text-capitalize btn-danger" style=" cursor: not-allowed; font-weight: bold; font-family: Arial, Helvetica, sans-serif;"> Face   recognition</h1>
+      <br><br>
+
+      <p style="font-size: large;" >The model is trained to identify the following Family Members: </p>
+         <b id="me">
+          <br><br><hr>
+          Adarsh(myself)
+          <br><br><hr></b>
+          <b id="father">
+            <br><br><hr>
+            My father 
+            <br><br><hr></b> 
+            <b id="mother">
+              <br><br><hr>
+              My mother <br><br><hr></b>
+                   <br><br><br>
+                   <label id="web" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Webcam View - </label> 
+      <div id="camera"></div>
+      <br>
+      <div id="result"></div>
+      <button id="capture" class="btn btn-success" onclick="take_snapshot()">Capture Image</button>
+      <button id="identify" class="btn btn-warning" onclick="check()">Identify Image</button>
+      <br>
+    <br><br>
+      <p style="font-weight: 700; font-size: 22px;">Member : <span id="result_object_name"></span>  </p>
+      <p style="font-weight: 700; font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

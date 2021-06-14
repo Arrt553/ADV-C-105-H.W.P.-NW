@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+    
+}
+#me:hover{
+    font-size: larger;
+    background-color:brown;
+    color: whitesmoke;
+    cursor: none;
+}
+#father:hover{
+    font-size: larger;
+    background-color:brown;
+    color: whitesmoke;
+    cursor: none;
+}
+#mother:hover{
+    font-size: larger;
+    background-color:brown;
+    color: whitesmoke;
+    cursor: none;
+}
+#captured_image:hover{
+    cursor: not-allowed;
+    background-color: darkblue;
+    size: 600px;
+}
+#camera:hover{
+   cursor: not-allowed;
+   background-color:chartreuse;
+}
+#web:hover{
+    cursor: not-allowed;
+    background-color:rgb(0, 89, 255);
+    color: whitesmoke;
+    font-size: larger;
+}
